@@ -1,0 +1,64 @@
+.list{
+    height: 280px;
+    overflow-y: auto;
+}
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+.table tr {
+    height: 50px;
+}
+.table thead tr th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+}
+.table tr:nth-child(odd) > td{
+    background-color: #F3F3FB;
+}
+.table tr:nth-child(odd) > td:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.table tr:nth-child(odd) > td:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table .opetation {
+    width: 40px;
+}
+
+.table .deleteBtn {
+    cursor: pointer;
+}
+.table .deleteBtn:hover {
+    cursor: pointer;
+    color: #1b2664;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F3F3FB; 
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #A5A7B3; 
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8B8C9C; 
+}
